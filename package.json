@@ -1,11 +1,11 @@
 {
-  "name": "Bootstrap Starter",
+  "name": "Waypoints",
   "version": "1.0.0",
-  "description": "This is a base starter eleventy repository with Bootstrap 5.0",
+  "description": "This is a final project for MMP350",
   "scripts": {
     "start": "eleventy --serve --quiet"
   },
-  "author": "Chris Stein",
+  "author": "Risa Parham, Daniel Seetaram",
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.4",
     "js-yaml": "^3.13.1",
