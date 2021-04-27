@@ -30,5 +30,11 @@ tags:
     </article>
   </sidebar>
 
+<h2>Blog<h2>
+  <ul>
+    {%- for post in collections.post -%}
+      <li>{{ post.data.title }}</li>
+    {%- endfor -%}
+  </ul>
 
 </div>
