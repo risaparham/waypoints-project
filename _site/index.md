@@ -30,10 +30,30 @@ tags:
     </article>
   </sidebar>
 
-<h2>Blog<h2>
+<h2>Blog</h2>
   <ul>
     {%- for post in collections.post -%}
-      <li>{{ post.data.title }}</li>
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+
+<h2>Blog Again</h2>
+  <ul>
+    {%- for post in collections.articles -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a>
+        <p>{{ post.data.title }}</p>
+      </li>
+    {%- endfor -%}
+  </ul>
+
+<h2>People</h2>
+  <ul>
+    {%- for person in collections.person -%}
+      <li><a href="{{ person.url }}">{{ person.data.fullname }}</a>
+        <p>Age: {{ person.data.age }}</p>
+        <br>
+        Location: {{ person.data.location }}
+      </li>
     {%- endfor -%}
   </ul>
 

@@ -8,6 +8,7 @@ tags:
     - nonbinary
     - NYC
     - BMCC
+    - person
 ---
 
 # {{fullname}}
