@@ -6,6 +6,9 @@ tags:
   - home
   - welcome
   - info
+eleventyNavigation:
+  key: Home
+  parent: main
 ---
 
 <div class="row">
