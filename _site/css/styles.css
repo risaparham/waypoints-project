@@ -1,1 +1,14 @@
-/* You can add your CUSTOM CSS HERE */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+}
+
+a {
+    text-decoration: none;
+}
