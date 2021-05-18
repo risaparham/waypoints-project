@@ -10,7 +10,7 @@ eleventyNavigation:
   key: Home
   parent: main
 ---
-  <div class = "container">
+  <div class = "container py-4">
     <div id="eventCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
