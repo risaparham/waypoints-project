@@ -10,6 +10,6 @@ eleventyNavigation:
 ---
 
 <div class="container">
-  <h3>About Waypoints</h3>
+  <h3 class="boldheader">About Waypoints</h3>
   <p>Waypoints is an event aggregator specifically for gaming/geek community events local to NYC!</p>
 </div>

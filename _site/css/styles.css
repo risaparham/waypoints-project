@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 p {
     font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+.boldheader {
+    font-family: 'Anton', sans-serif;
+    color: #5D5CA2;
 }
 
 .navbar-brand {
@@ -11,4 +18,13 @@ p {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #2c9597;
+}
+
+.logo {
+    color: #33ABAE;
+    font-size: 24pt;
 }
