@@ -5,27 +5,25 @@ layout: page
 tags:
   - events
 eleventyNavigation:
-  key: Events
+  key: events
   parent: main
 ---
 
-<div class="container" >
+<div class="meet-container" >
   <h3 class="boldheader">Find meetups in the NYC area</h3>
   {% for event in events %} 
-  {% raw %}
-  <div class="card" style="width: 18rem;">
-    <img src="{{ ... }}" class="card-img-top" alt="{{ ... }}">
+  <div class="card">
+    <img src="" class="card-img-top" alt="">
     <div class="card-body">
-      <h5 class="card-title"><a href="#" class="card-link">{{ event.name }}</a></h5>
-      <p class="card-text">{{ event.description }}</p>
+      <h5 class="card-title"><a href="/events/{{event.group.urlname | slug }}-{{event.id}}/" class="card-link">{{event.name}}</a></h5>
+      <p class="card-text">{{event.description | safe | truncate(144)}}</p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Host</li>
-      <li class="list-group-item">Location</li>
-      <li class="list-group-item">Date and Time</li>
+      <li class="list-group-item">{{event.group.name}}</li>
+      <li class="list-group-item">{{event.venue.name}}</li>
+      <li class="list-group-item">{{event.local_date}} at {{event.local_time}}</li>
     </ul>
   </div>
-  {% raw %}
   {% endfor %}
 </div>
 

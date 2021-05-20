@@ -10,28 +10,36 @@ eleventyNavigation:
   key: Home
   parent: main
 ---
+<!-- Photos by Ryan Wallace, Christopher Paul High on Unsplash -->
 <div class="container">
-  <div id="eventCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="images/testimg.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  <div class="d-flex flex-column text-center">
+    <h2 class="boldheader">Welcome!</h2>
+    <p>Browse recent small gaming gatherings local to NYC</p>
   </div>
+  <div class="d-flex justify-content-center">
+    <div id="myCarousel" class="carousel slide w-75" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/boardgame1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/boardgame2.jpg" alt="Second slide"> 
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/boardgame3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
   <h3 class="boldheader" style="margin-top:2rem">Upcoming Events</h3>
   <div class="container">
     <div class="row">
