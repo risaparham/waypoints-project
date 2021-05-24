@@ -16,7 +16,7 @@ layout: base
   <ul class="list-group list-group-flush">
     <li class="list-group-item">{{ event.group.name }}</li>
     <li class="list-group-item">{{ event.venue.name }}</li>
-    <li class="list-group-item">{{ event.venue.address_1 }}, {{ event.venue.city }}, {{ event.venue.zip }}</li>
+    <li class="list-group-item">{{ event.venue.address_1 }}, {{ event.venue.city }}, {{ event.venue.zip }} {{ event.how_to_find_us }}</li>
     <li class="list-group-item">{{ event.local_date }} at {{ event.local_time }}</li>
   </ul>
   <p class="card-text">{{ event.description | safe }}</p>

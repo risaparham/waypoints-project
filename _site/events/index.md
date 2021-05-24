@@ -21,7 +21,7 @@ eleventyNavigation:
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><b>Group/Organizer:</b> {{ event.group.name }}</li>
       <li class="list-group-item"><b>Location:</b> {{ event.venue.name }}</li>
-      <li class="list-group-item"><b>Address: </b>{{ event.venue.address_1 }}, {{ event.venue.city }}, {{ event.venue.zip }}</li>
+      <li class="list-group-item"><b>Address: </b>{{ event.venue.address_1 }}, {{ event.venue.city }}, {{ event.venue.zip }} </li>
       <li class="list-group-item"><b>Time: </b>{{ event.local_date }} at {{ event.local_time }}</li>
     </ul>
   </div>
