@@ -45,6 +45,10 @@ a:hover {
     color: white;
 }
 
+.card-link:hover {
+    color: #F79F3F;
+}
+
 .btn-info {
     background-color: #33ABAE;
 }

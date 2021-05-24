@@ -39,28 +39,20 @@ eleventyNavigation:
       </a>
     </div>
   </div>
-
+  
   <h3 class="boldheader" style="margin-top:2rem">Upcoming Events</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md">
+  {% for event in events.slice(0,2) %}
+  <div class="row">
+      <div class="col">
         <div class="card" style="width: 24rem;">
-          <img src="..." class="card-img-top" alt="...">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
           <div class="card-body">
-            <h5 class="card-title">Featured: </h5>
-            <p class="card-text">Event description preview</p>
+            <h5 class="card-title"><a href="/events/{{ event.group.urlname | slug }}-{{ event.id }}/" class="card-link">Featured: {{ event.name }}</a></h5>
+            <p class="card-text">{{ event.description | safe | truncate(100) }}</p>
           </div>
         </div>
       </div>
-      <div class="col-md">
-        <div class="card" style="width: 24rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Featured: </h5>
-            <p class="card-text">Event description preview</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+  {% endfor %}
+  
 </div>
