@@ -33,5 +33,29 @@ a:hover {
 .meet-container {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.card-body {
+    background-color: #33ABAE;
+    color: rgb(236, 236, 236);
+}
+
+.card-link {
+    color: white;
+}
+
+.btn-info {
+    background-color: #33ABAE;
+}
+
+.join-link {
+    color: white;
+}
+
+.join-link:hover {
+    color: white;
+}
+
+
+
